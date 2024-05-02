@@ -1,0 +1,14 @@
+#drop-area {
+    width: 100%;
+    min-height: 200px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#result {
+    margin-top: 20px;
+}
