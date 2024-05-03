@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Preverjanje datoteke s Snyk</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preverjanje datoteke s Snyk</title>
 
-<link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <div id="drop-area">
+      <p>Povlecite in spustite datoteko sem</p>
+      <input
+        type="file"
+        id="fileElem"
+        multiple
+        accept=".js, .php"
+        style="display: none"
+      />
+      <button id="fileButton" class="button">Izberi datoteko</button>
+      <div id="fileNameDisplay"></div>
+      <button id="uploadButton" class="button" style="display: none">
+        Naloži in preveri
+      </button>
+    </div>
 
-</head>
-<body>
+    <div id="result"></div>
 
-<div id="drop-area">
-    <p>Povlecite in spustite datoteko sem</p>
-    <input type="file" id="fileElem" multiple accept=".js, .php" style="display:none">
-    <button id="fileButton" class="button">Izberi datoteko</button>
-    <div id="fileNameDisplay"></div>
-    <button id="uploadButton" class="button" style="display:none;">Naloži in preveri</button>
-</div>
-
-<div id="result"></div>
-
-<script src="../js/index.js"></script>
-
-</body>
+    <script src="../js/index.js"></script>
+  </body>
 </html>
